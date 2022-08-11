@@ -27,6 +27,26 @@ const ImpossibleParty: NextPage = () => {
           flexGrow: 1,
         }}
       >
+        <Box
+          sx={{
+            width: "100%",
+            height: "100vh",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Typography variant="h1" color="white" className="impact">
+            IMPOSSIBLE LOUNGE
+          </Typography>
+          <Typography variant="h5" color="white" className="impact">
+            SAN DIEGO
+          </Typography>
+          <Typography variant="subtitle1" color="white" className="impact">
+            FOLLOW US ON IG @IMPOSSIBLELOUNGE
+          </Typography>
+        </Box>
         <PartyDialog
           open={open}
           handleClose={() => setOpen(false)}

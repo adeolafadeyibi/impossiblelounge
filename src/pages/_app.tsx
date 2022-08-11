@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import type { FC } from "react";
 import type { NextPage } from "next";
 import type { AppProps } from "next/app";
@@ -12,6 +11,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { LocalizationProvider } from "@mui/lab";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import { createTheme } from "../theme";
+import "../styles/global.css";
 import "../i18n";
 import {
   SettingsConsumer,

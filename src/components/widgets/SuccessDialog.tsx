@@ -84,7 +84,7 @@ const SuccessDialog: FC<DialogProps> = ({ open, handleClose }) => {
           >
             Congrats!
           </Typography>
-          You have <br /> ! Free drink ticket
+          You have <br /> 1 Free drink ticket
         </Typography>
         <Typography
           variant="subtitle2"
