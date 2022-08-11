@@ -96,6 +96,8 @@ const SuccessDialog: FC<DialogProps> = ({ open, handleClose }) => {
         </Typography>
         <Button
           variant="contained"
+          href="https://www.eventbrite.com/e/impossible-party-edm-edition-tickets-397928273177"
+          target="_blank"
           sx={{
             width: "100%",
             background: "#1f2022",
@@ -103,7 +105,7 @@ const SuccessDialog: FC<DialogProps> = ({ open, handleClose }) => {
             mb: "20px",
           }}
         >
-          GET ME EDM TICKETS!
+          GET MY EDM TICKETS!
         </Button>
         <Typography
           variant="subtitle2"
