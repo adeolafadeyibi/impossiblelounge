@@ -41,7 +41,7 @@ const ImpossibleParty: NextPage = () => {
             IMPOSSIBLE LOUNGE
           </Typography>
           <Typography variant="h5" color="white" className="impact">
-            SAN DIEGO
+            SAN DIEGO, CA
           </Typography>
           <Typography variant="subtitle1" color="white" className="impact">
             FOLLOW US ON IG @IMPOSSIBLELOUNGE
