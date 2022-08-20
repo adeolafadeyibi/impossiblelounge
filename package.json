@@ -2,7 +2,7 @@
   "name": "impossible-party",
   "version": "5.2.0",
   "author": "Arslan",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -11,18 +11,6 @@
     "build-export": "next build && next export",
     "lint": "next lint",
     "lint-fix": "next lint --fix"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   },
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.21.1",
