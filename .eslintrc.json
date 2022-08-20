@@ -4,6 +4,11 @@
     "@next/next/no-img-element": "off",
     "jsx-a11y/alt-text": "off",
     "react/display-name": "off",
-    "react/no-children-prop": "off"
+    "react/no-children-prop": "off",
+    "react/jsx-max-props-per-line": [
+      {
+        "maximum": 0
+      }
+    ]
   }
 }
