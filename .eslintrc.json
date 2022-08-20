@@ -7,7 +7,7 @@
     "react/no-children-prop": "off",
     "react/jsx-max-props-per-line": [
       {
-        "maximum": 1
+        "maximum": 0
       }
     ]
   }
