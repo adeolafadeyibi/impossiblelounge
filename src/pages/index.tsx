@@ -61,6 +61,6 @@ const ImpossibleParty: NextPage = () => {
   );
 };
 
-ImpossibleParty.getLayout = (page) => <MainLayout>{page}</MainLayout>;
+ImpossibleParty.getLayout = (page) => page;
 
 export default ImpossibleParty;
