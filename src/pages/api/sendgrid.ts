@@ -16,7 +16,6 @@ async function sendEmail(req: any, res: any) {
 
     return res.status(error.statusCode || 500).json({ error: error.message });
   }
-
   return res.status(200).json({ error: "" });
 }
 
