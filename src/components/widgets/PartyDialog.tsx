@@ -85,7 +85,7 @@ interface DialogProps {
 }
 
 const formSchema = Yup.object().shape({
-  name: Yup.string().required("Please add area name!"),
+  name: Yup.string().required("Please add your name!"),
   email: Yup.string()
     .required("Please add email!")
     .email("Please add a valid email!"),
