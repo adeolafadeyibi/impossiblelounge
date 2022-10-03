@@ -205,7 +205,7 @@ const PartyDialog: FC<DialogProps> = ({ open, handleClose, openSuccess }) => {
               />
             </Box>
             <Typography variant="subtitle2" color="GrayText" mx={2}>
-              FREE Drinks or cocktail at Labor Day Weekend Events.
+              FREE Drinks at Halloween Event.
             </Typography>
           </Box>
           <Box sx={{ display: "flex", alignItems: "center" }} mb={4}>

@@ -96,7 +96,7 @@ const SuccessDialog: FC<DialogProps> = ({ open, handleClose }) => {
         </Typography>
         <Button
           variant="contained"
-          href="https://www.eventbrite.com/manage/events/430908277257/details"
+          href="https://www.eventbrite.com/e/sexy-hip-hop-afrobeats-reggeton-halloween-party-tickets-430908277257"
           target="_blank"
           sx={{
             width: "100%",
@@ -117,9 +117,10 @@ const SuccessDialog: FC<DialogProps> = ({ open, handleClose }) => {
             component="span"
             variant="subtitle1"
             color="cyan"
-            sx={{ ml: "6px" }}
+            sx={{ ml: "6px", textDecoration:"none" }}
           >
-            @impossiblelounge
+            <a href="https://www.instagram.com/impossiblelounge">
+            @impossiblelounge  </a>
           </Typography>
         </Typography>
       </Box>
