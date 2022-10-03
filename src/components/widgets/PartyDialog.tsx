@@ -145,7 +145,7 @@ const PartyDialog: FC<DialogProps> = ({ open, handleClose, openSuccess }) => {
           borderRadius: "20px",
         }}
       >
-        <StyledImage src="/static/flyerwithlatina.png" alt="img" />
+        <StyledImage src="/static/halloweenflyer.jpg" alt="img" />
         <form noValidate onSubmit={formik.handleSubmit}>
           <Box
             sx={{
@@ -160,7 +160,7 @@ const PartyDialog: FC<DialogProps> = ({ open, handleClose, openSuccess }) => {
             </Typography>
           </Box>
           <Typography variant="h5" color="#1f2022" mb={3}>
-            Don't miss the hottest underground events in san Diego
+            Don't miss the sexiest Halloween Party in San Diego
           </Typography>
           <Box sx={{ display: "flex", alignItems: "center" }} mb={2}>
             <Box
@@ -233,7 +233,7 @@ const PartyDialog: FC<DialogProps> = ({ open, handleClose, openSuccess }) => {
           </Box>
           <Box sx={{ display: "flex", alignItems: "center" }} mb={2}>
             <Typography variant="h6" color="#1f2022" mr={2}>
-              JOIN the 100's that have experienced the IMPOSSIBLE.
+              JOIN the 1000's that have experienced the IMPOSSIBLE.
             </Typography>
             <LockIconImage src="static/secureIcon.jpeg" alt="lock" />
           </Box>
