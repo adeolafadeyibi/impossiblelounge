@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { useEffect, useState } from "react";
@@ -46,6 +46,12 @@ const ImpossibleParty: NextPage = () => {
           <Typography variant="subtitle1" color="white" className="impact">
             FOLLOW US ON IG @IMPOSSIBLELOUNGE
           </Typography>
+          
+            <Button variant="contained"
+              href="https://impossiblehalloween.eventbrite.com"
+            >
+              GIVE ME MY HALLOWEEN TICKETS!
+            </Button>
         </Box>
         <PartyDialog
           open={open}

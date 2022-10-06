@@ -122,6 +122,7 @@ const SuccessDialog: FC<DialogProps> = ({ open, handleClose }) => {
             <a href="https://www.instagram.com/impossiblelounge">
             @impossiblelounge  </a>
           </Typography>
+        
         </Typography>
       </Box>
     </BootstrapDialog>
