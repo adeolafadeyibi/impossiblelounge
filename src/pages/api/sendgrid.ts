@@ -8,7 +8,7 @@ if (process.env.SENDGRID_API_KEY)
 
 async function sendEmail(req: any, res: any) {
 
-  const ticketLink = `<a href=https://impossiblehalloween.eventbrite.com/>Get My Tickets</a>`;
+  const ticketLink = `<a href=impossiblehalloween.eventbrite.com>Get My Tickets</a>`;
 
   try {
     await sendgrid.send({
@@ -24,8 +24,7 @@ Get your tickets at the link below.
       YOUR FREE DRINKS AWAITS!. JUST SHOW YOUR ID AND EMAIL AND YOU'LL GET YOUR DRINK!`,
     });
   } catch (error) {
-    console.log("error", error);
-
+    
     return res.status(error.statusCode || 500).json({ error: error.message });
   }
   return res.status(200).json({ error: "" });
