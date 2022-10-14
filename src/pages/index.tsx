@@ -48,7 +48,7 @@ const ImpossibleParty: NextPage = () => {
           </Typography>
           
             <Button variant="contained"
-              href="https://impossiblehalloween.eventbrite.com"
+              href="https://impossiblehalloween.eventbrite.com" 
             >
               GIVE ME MY HALLOWEEN TICKETS!
             </Button>
