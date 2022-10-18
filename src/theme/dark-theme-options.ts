@@ -15,58 +15,59 @@ const neutral = {
 };
 
 const background = {
-  default: "#0B0F19",
-  paper: neutral[900],
+  default: "#F9FAFC",
+  paper: "#FFFFFF",
 };
 
-const divider = "#2D3748";
+const divider = "#E6E8F0";
 
 const primary = {
-  main: "#7582EB",
-  light: "#909BEF",
-  dark: "#515BA4",
-  contrastText: neutral[900],
+  main: "#FFC107",
+  light: "#FFC108",
+  dark: "#FFA000",
+  contrastText: "#000",
 };
 
 const secondary = {
-  main: "#10B981",
-  light: "#3FC79A",
-  dark: "#0B815A",
-  contrastText: neutral[900],
+  main: "#FFA000",
+  light: "#FFAB1D",
+  dark: "#DE8D03",
+  contrastText: "#000",
 };
 
 const success = {
-  main: "#10B981",
-  light: "#43C6B7",
-  dark: "#0E8074",
-  contrastText: neutral[900],
+  main: "#0a6b55",
+  light: "#0f705a",
+  dark: "#094f3f",
+  contrastText: "#FFFFFF",
 };
 
 const info = {
   main: "#2196F3",
   light: "#64B6F7",
   dark: "#0B79D0",
-  contrastText: neutral[900],
+  contrastText: "#FFFFFF",
 };
 
 const warning = {
   main: "#FFB020",
   light: "#FFBF4C",
   dark: "#B27B16",
-  contrastText: neutral[900],
+  contrastText: "#FFFFFF",
 };
 
 const error = {
   main: "#D14343",
   light: "#DA6868",
   dark: "#922E2E",
-  contrastText: neutral[900],
+  contrastText: "#FFFFFF",
 };
 
 const text = {
-  primary: "#EDF2F7",
-  secondary: "#A0AEC0",
-  disabled: "rgba(255, 255, 255, 0.48)",
+  primary: "#FFA000",
+  secondary: "#65748B",
+  dark: "#242424",
+  disabled: "rgba(55, 65, 81, 0.48)",
 };
 
 export const darkThemeOptions: ThemeOptions = {
@@ -83,15 +84,14 @@ export const darkThemeOptions: ThemeOptions = {
       styleOverrides: {
         root: {
           "&.MuiChip-filledDefault": {
-            backgroundColor: neutral[800],
+            backgroundColor: neutral[200],
             "& .MuiChip-deleteIcon": {
-              color: neutral[500],
+              color: neutral[400],
             },
           },
           "&.MuiChip-outlinedDefault": {
-            borderColor: neutral[700],
             "& .MuiChip-deleteIcon": {
-              color: neutral[700],
+              color: neutral[300],
             },
           },
         },
@@ -99,10 +99,26 @@ export const darkThemeOptions: ThemeOptions = {
     },
     MuiInputBase: {
       styleOverrides: {
+        root: {
+          height: "56px",
+          borderRadius: "8px",
+          fontSize: "16px",
+          fontWeight: "600",
+          padding: "0px !important",
+        },
+        multiline: {
+          height: "100%",
+          padding: "13px 0px !important",
+        },
+        inputMultiline: {
+          height: "100% !important",
+        },
         input: {
+          color: text.primary,
+          padding: "13px 16px !important",
           "&::placeholder": {
-            opacity: 1,
-            color: text.secondary,
+            opacity: 0.5,
+            color: text.primary,
           },
         },
       },
@@ -110,7 +126,7 @@ export const darkThemeOptions: ThemeOptions = {
     MuiOutlinedInput: {
       styleOverrides: {
         notchedOutline: {
-          borderColor: divider,
+          borderColor: text.dark,
         },
       },
     },
@@ -135,10 +151,10 @@ export const darkThemeOptions: ThemeOptions = {
     MuiSwitch: {
       styleOverrides: {
         switchBase: {
-          color: neutral[700],
+          color: neutral[500],
         },
         track: {
-          backgroundColor: neutral[500],
+          backgroundColor: neutral[400],
           opacity: 1,
         },
       },
@@ -153,9 +169,9 @@ export const darkThemeOptions: ThemeOptions = {
     MuiTableHead: {
       styleOverrides: {
         root: {
-          backgroundColor: neutral[800],
+          backgroundColor: neutral[100],
           ".MuiTableCell-root": {
-            color: neutral[300],
+            color: neutral[700],
           },
         },
       },
@@ -163,11 +179,12 @@ export const darkThemeOptions: ThemeOptions = {
   },
   palette: {
     action: {
-      active: neutral[400],
-      hover: "rgba(255, 255, 255, 0.04)",
-      selected: "rgba(255, 255, 255, 0.08)",
-      disabledBackground: "rgba(255, 255, 255, 0.12)",
-      disabled: "rgba(255, 255, 255, 0.26)",
+      active: neutral[500],
+      focus: "rgba(55, 65, 81, 0.12)",
+      hover: "rgba(55, 65, 81, 0.04)",
+      selected: "rgba(55, 65, 81, 0.08)",
+      disabledBackground: "rgba(55, 65, 81, 0.12)",
+      disabled: "rgba(55, 65, 81, 0.26)",
     },
     background,
     divider,
@@ -183,29 +200,29 @@ export const darkThemeOptions: ThemeOptions = {
   },
   shadows: [
     "none",
-    "0px 1px 2px rgba(0, 0, 0, 0.24)",
-    "0px 1px 2px rgba(0, 0, 0, 0.24)",
-    "0px 1px 4px rgba(0, 0, 0, 0.24)",
-    "0px 1px 5px rgba(0, 0, 0, 0.24)",
-    "0px 1px 6px rgba(0, 0, 0, 0.24)",
-    "0px 2px 6px rgba(0, 0, 0, 0.24)",
-    "0px 3px 6px rgba(0, 0, 0, 0.24)",
-    "0px 4px 6px rgba(0, 0, 0, 0.24)",
-    "0px 5px 12px rgba(0, 0, 0, 0.24)",
-    "0px 5px 14px rgba(0, 0, 0, 0.24)",
-    "0px 5px 15px rgba(0, 0, 0, 0.24)",
-    "0px 6px 15px rgba(0, 0, 0, 0.24)",
-    "0px 7px 15px rgba(0, 0, 0, 0.24)",
-    "0px 8px 15px rgba(0, 0, 0, 0.24)",
-    "0px 9px 15px rgba(0, 0, 0, 0.24)",
-    "0px 10px 15px rgba(0, 0, 0, 0.24)",
-    "0px 12px 22px -8px rgba(0, 0, 0, 0.24)",
-    "0px 13px 22px -8px rgba(0, 0, 0, 0.24)",
-    "0px 14px 24px -8px rgba(0, 0, 0, 0.24)",
-    "0px 20px 25px rgba(0, 0, 0, 0.24)",
-    "0px 25px 50px rgba(0, 0, 0, 0.24)",
-    "0px 25px 50px rgba(0, 0, 0, 0.24)",
-    "0px 25px 50px rgba(0, 0, 0, 0.24)",
-    "0px 25px 50px rgba(0, 0, 0, 0.24)",
+    "0px 1px 1px rgba(100, 116, 139, 0.06), 0px 1px 2px rgba(100, 116, 139, 0.1)",
+    "0px 1px 2px rgba(100, 116, 139, 0.12)",
+    "0px 1px 4px rgba(100, 116, 139, 0.12)",
+    "0px 1px 5px rgba(100, 116, 139, 0.12)",
+    "0px 1px 6px rgba(100, 116, 139, 0.12)",
+    "0px 2px 6px rgba(100, 116, 139, 0.12)",
+    "0px 3px 6px rgba(100, 116, 139, 0.12)",
+    "0px 2px 4px rgba(31, 41, 55, 0.06), 0px 4px 6px rgba(100, 116, 139, 0.12)",
+    "0px 5px 12px rgba(100, 116, 139, 0.12)",
+    "0px 5px 14px rgba(100, 116, 139, 0.12)",
+    "0px 5px 15px rgba(100, 116, 139, 0.12)",
+    "0px 6px 15px rgba(100, 116, 139, 0.12)",
+    "0px 7px 15px rgba(100, 116, 139, 0.12)",
+    "0px 8px 15px rgba(100, 116, 139, 0.12)",
+    "0px 9px 15px rgba(100, 116, 139, 0.12)",
+    "0px 10px 15px rgba(100, 116, 139, 0.12)",
+    "0px 12px 22px -8px rgba(100, 116, 139, 0.25)",
+    "0px 13px 22px -8px rgba(100, 116, 139, 0.25)",
+    "0px 14px 24px -8px rgba(100, 116, 139, 0.25)",
+    "0px 10px 10px rgba(31, 41, 55, 0.04), 0px 20px 25px rgba(31, 41, 55, 0.1)",
+    "0px 25px 50px rgba(100, 116, 139, 0.25)",
+    "0px 25px 50px rgba(100, 116, 139, 0.25)",
+    "0px 25px 50px rgba(100, 116, 139, 0.25)",
+    "0px 25px 50px rgba(100, 116, 139, 0.25)",
   ],
 };

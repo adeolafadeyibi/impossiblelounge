@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Merienda';
+  src: url('../src/fonts/Merienda-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merienda';
+  src: url('../src/fonts/Merienda-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'endor';
+  src: url('../src/fonts/endor.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('../src/fonts/Poppins-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('../src/fonts/Poppins-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('../src/fonts/Poppins-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('../src/fonts/Poppins-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('../src/fonts/Poppins-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+.merienda {
+  font-family: 'Merienda' !important;
+}
+
+.endor {
+  font-family: 'endor' !important;
+}
+
+.poppins {
+  font-family: 'poppins' !important;
+}

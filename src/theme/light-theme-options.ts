@@ -22,23 +22,23 @@ const background = {
 const divider = "#E6E8F0";
 
 const primary = {
-  main: "#5048E5",
-  light: "#828DF8",
-  dark: "#3832A0",
-  contrastText: "#FFFFFF",
+  main: "#FFC107",
+  light: "#FFC108",
+  dark: "#FFA000",
+  contrastText: "#000",
 };
 
 const secondary = {
-  main: "#10B981",
-  light: "#3FC79A",
-  dark: "#0B815A",
-  contrastText: "#FFFFFF",
+  main: "#FFA000",
+  light: "#FFAB1D",
+  dark: "#DE8D03",
+  contrastText: "#000",
 };
 
 const success = {
-  main: "#10B981",
-  light: "#43C6B7",
-  dark: "#0E8074",
+  main: "#0a6b55",
+  light: "#0f705a",
+  dark: "#094f3f",
   contrastText: "#FFFFFF",
 };
 
@@ -64,8 +64,9 @@ const error = {
 };
 
 const text = {
-  primary: "#121828",
+  primary: "#FFA000",
   secondary: "#65748B",
+  dark: "#242424",
   disabled: "rgba(55, 65, 81, 0.48)",
 };
 
@@ -98,10 +99,26 @@ export const lightThemeOptions: ThemeOptions = {
     },
     MuiInputBase: {
       styleOverrides: {
+        root: {
+          height: "48px",
+          borderRadius: "8px",
+          fontSize: "16px",
+          fontWeight: "600",
+          padding: "0px !important",
+        },
+        multiline: {
+          height: "100%",
+          padding: "13px 0px !important",
+        },
+        inputMultiline: {
+          height: "100% !important",
+        },
         input: {
+          color: text.primary,
+          padding: "13px 16px !important",
           "&::placeholder": {
-            opacity: 1,
-            color: text.secondary,
+            opacity: 0.5,
+            color: text.primary,
           },
         },
       },
@@ -109,7 +126,7 @@ export const lightThemeOptions: ThemeOptions = {
     MuiOutlinedInput: {
       styleOverrides: {
         notchedOutline: {
-          borderColor: divider,
+          borderColor: text.dark,
         },
       },
     },

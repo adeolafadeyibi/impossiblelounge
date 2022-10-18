@@ -15,19 +15,13 @@ interface PropTypes {
 }
 
 const Input = styled(InputBase)(({ theme }) => ({
-  height: "40px",
   width: "100%",
-  padding: "10px",
-  fontSize: "14px",
-  lineHeight: "20px",
-  fontWeight: "600",
-  border: "1px solid #1f2022",
-  color: "#1f2022",
-  borderRadius: "6px",
-
-  "::placeholder": {
-    color: "grayText",
-  },
+  fontFamily: "poppins !important",
+  fontSize: "16px",
+  background: "#2A2A2A",
+  lineHeight: "25px",
+  fontWeight: "500",
+  padding: "16px",
 }));
 
 const FormikTextfield: FC<PropTypes> = ({
@@ -42,15 +36,19 @@ const FormikTextfield: FC<PropTypes> = ({
   inputType,
 }) => {
   return (
-    <Box>
+    <Box className="flex flex-col flex-1">
       <Typography
-        variant="subtitle1"
-        sx={{ fontWeight: "600" }}
-        color="#1f2022"
+        variant="inherit"
+        className="text-[14px] leading-[21px] text-grey_text !mb-[9px]"
       >
         {label}
       </Typography>
       <Input
+        className={`h-14 ${
+          Boolean(isTouched && error)
+            ? "border border-red-500"
+            : "border border-[#2A2A2A] focus-within:border-secondary focus-within:outline-1 focus-within:outline-secondary"
+        } `}
         fullWidth
         name={name}
         onBlur={handleBlur}

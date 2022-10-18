@@ -8,11 +8,9 @@ import nProgress from "nprogress";
 import type { EmotionCache } from "@emotion/cache";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import { LocalizationProvider } from "@mui/lab";
-import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import { createTheme } from "../theme";
-import "../styles/global.css";
-import "../i18n";
+import "../../styles/global.css";
+import "animate.css";
 import {
   SettingsConsumer,
   SettingsProvider,
@@ -39,30 +37,27 @@ const App: FC<EnhancedAppProps> = (props) => {
   return (
     <CacheProvider value={emotionCache}>
       <Head>
-        <title>Impossible Party</title>
+        <title>Impossible Lounge Halloween</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
 
-      <LocalizationProvider dateAdapter={AdapterDateFns}>
-        <SettingsProvider>
-          <SettingsConsumer>
-            {({ settings }) => (
-              <ThemeProvider
-                theme={createTheme({
-                  direction: settings.direction,
-                  responsiveFontSizes: settings.responsiveFontSizes,
-                  mode: settings.theme,
-                })}
-              >
-                <CssBaseline />
-                <Toaster position="top-center" />
-
-                {getLayout(<Component {...pageProps} />)}
-              </ThemeProvider>
-            )}
-          </SettingsConsumer>
-        </SettingsProvider>
-      </LocalizationProvider>
+      <SettingsProvider>
+        <SettingsConsumer>
+          {({ settings }) => (
+            <ThemeProvider
+              theme={createTheme({
+                direction: settings.direction,
+                responsiveFontSizes: settings.responsiveFontSizes,
+                mode: settings.theme,
+              })}
+            >
+              <CssBaseline />
+              <Toaster position="top-center" />
+              {getLayout(<Component {...pageProps} />)}
+            </ThemeProvider>
+          )}
+        </SettingsConsumer>
+      </SettingsProvider>
     </CacheProvider>
   );
 };

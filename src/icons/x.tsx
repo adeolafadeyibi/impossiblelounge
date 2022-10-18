@@ -1,16 +1,18 @@
-import { createSvgIcon } from '@mui/material/utils';
+import { createSvgIcon } from "@mui/material/utils";
 
 export const X = createSvgIcon(
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 20 20"
-    fill="currentColor"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
   >
-    <path
-      fillRule="evenodd"
-      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-      clipRule="evenodd"
+    <image
+      id="icons8_multiply_96px"
+      width="24"
+      height="24"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAE4UlEQVRYCe2ZP08UQRiHb/cSNYRALndwpYUNpZ1QKWBCQ6ffxI4PQOcn0ZJCDEhsiHQUFpIYK5vL7oUcCRCbW38/k9PlOJj9M7vzzvqaeb29mXdn5n2evd270GrpPyWgBJSAElACSkAJKAEloASUgBJQAkpACSgBJaAElMD/QCAoU+Ty8vKT8Xj8NgiCDc6TJMlhu91+MxgMfvB906KKegsL6Ha7K2EYHgNyB5FuI/RvQcJJutP3436/v4qL7QPqWESk2zkuvLU4js/SnVmPw6yJ03mAvIu+afjoai1io/vY8DO+aUKgFsLfRy3T8NHV6uAOQBY8zh2FBWClTcRdrTESUvAX7ioW/fexwPDdrYwA0+3LewkZ4ZOuiQVzZkYZAQczZ7zZ6a2EHPBZcRYWzLsVhQXgPr+D2c4RpuadhJzw+RAmCxOHmeOFBQyHw2+YcQMxRJgaJXzq9XrrpkTX49wjLq5D7OO+ez6G/zTWvlH0GxBnCPhfmVhaWnqK8/kR7OLV1K7wlW07juMjU6KLccLHN5o9rD2HMDXCfxlF0akp8b7x0gI4eRMkuIBPdlYEcCKfJbiCT27WBHAyHyW4hE9mVgVwQp8kuIZPXtYFcFIfJEiAT1aVCODEkiVIgU9OlQng5BIlSIJPRpUK4AKSJEiDTz6VC+AiEiRIhE82tQjgQi4lSIVPLrUJ4GIuJEiGTya1CuCCdUqQDp88ahfAReuQ4AN8snAigAtXKcEX+OTgTAAXr0KCT/DJwKkAbsCmBN/gs37nArgJGxJ8hM/aRQjgRspI8BU+6xYjgJspIoHn1f1nRK5pK0QJYFE5JfziOYiHCFOz8jdc0yJ5x8UJYAE5JfAUU4iEz02LFMCNWZQgFj7rFCuAm7MgQTR81ihaADdYQoJ4+KxPvABukhKSJPkcBMEC35sCuRfIfR5F0akp1/V46HoDWdYH0A6APsiSyxzm8hweSw/xAlI/sh7lgPkIEvZ6vd56jnOcpAZOVs24KAESJNLnEEXaFT4J23EcHxU5uY5zxAqwAH/CT7QEkQIswhcvQZyAPPBxexmRMG5Ti3w1hMhPgqiHcB74gD0E+BcMHiNMbQ65ez1hD2YxnwCCISBQzPLAvfEji78TcN4BooswNVGfBBECysCf0PZVgnMBNuD7LMGpAJvwfZXgTEAV8H2U4ERAlfB9k1C7gDrg+yShVgF1wvdFQm0CXMD3QUItAlzCly6hcgES4EuWUKkASfClSqhMgET4EiVUIkAyfGkSrAvwAb4kCVYF+ARfigRrAnyEL0GCFQE+w3ctobSAJsB3KaGUgCbBdyWhsIBut7sShuExNt5BmNoIuVuDweDElChhvN/vr47H433sZQFhaudJkqzFcXxmSpw1Hs7qzNIHoLvIaxx81NTChfIF9W3h+AJhap0gCMjClDdzvLAAzLaJMDWvrvx0MTklZGGRnv7vcRkBptuXt/AndHJIMLGYTHnrtYyAg1uz/evwHv6klIwS7mMxmWrma2EBeEjtYMZzxHRrDPxJYSkJo0lf6pUPYbJIdWU/bGdPvZl5fX0dz8/Pv8c3gMd4CPUweoXjj+12+xU2/BXvG9UuLy9/ot53qHG63tdRFH1vVLFajBJQAkpACSgBJaAElIASUAJKQAkoASWgBJSAElACSsA6gd9t6JX8uuo4CAAAAABJRU5ErkJggg=="
     />
   </svg>,
-  'X'
+  "X"
 );
