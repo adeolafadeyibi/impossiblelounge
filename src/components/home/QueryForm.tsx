@@ -42,10 +42,10 @@ const QueryForm: FC = () => {
     },
   });
   return (
-    <Box className="px-[120px] flex flex-col items-center relative">
+    <Box className="px-4 md:px-[50px] flex flex-col items-center relative">
       <Typography
         variant="inherit"
-        className="text-[48px] text-secondary !mb-[90px] endor"
+        className="text-[32px] sm:text-[40px] md:text-[48px] text-secondary !mb-[60px] md:!mb-[90px] endor"
       >
         Do you have a question?
       </Typography>
@@ -53,7 +53,7 @@ const QueryForm: FC = () => {
         component="form"
         noValidate
         onSubmit={formik.handleSubmit}
-        className="w-[480px] mx-auto flex flex-col mb-[96px] z-10"
+        className="w-full sm:w-[480px] mx-auto flex flex-col mb-[60px] md:mb-[96px] z-10"
       >
         <Box className="mb-6">
           <FormikTextfield
@@ -87,7 +87,7 @@ const QueryForm: FC = () => {
           startIcon={isLoading ? <CircularProgress size={20} /> : <></>}
         />
       </Box>
-      <Box className="flex flex-col items-center justify-center mb-[99px] z-10">
+      <Box className="flex flex-col items-center justify-center mb-[60px] md:mb-[99px] z-10">
         <Typography
           variant="inherit"
           className="text-[32px] text-white !mb-[38px] merienda font-bold"
@@ -108,7 +108,7 @@ const QueryForm: FC = () => {
           </Typography>
         </Typography>
       </Box>
-      <Box className="absolute z-0 bottom-[20px] left-[120px] w-[304px] h-[200px]">
+      <Box className="hidden lg:block absolute z-0 bottom-[20px] left-[120px] w-[304px] h-[200px]">
         <Image
           width="304px"
           height="200px"
@@ -117,7 +117,7 @@ const QueryForm: FC = () => {
           alt="pumpkin"
         />
       </Box>
-      <Box className="absolute z-0 top-[25%] right-[0px] w-[304px] h-[200px]">
+      <Box className="hidden lg:block absolute z-0 top-[25%] right-[0px] w-[304px] h-[200px]">
         <Image
           width="304px"
           height="200px"
@@ -126,7 +126,7 @@ const QueryForm: FC = () => {
           alt="pumpkin"
         />
       </Box>
-      <Box className="absolute z-0 top-[25%] left-[120px] w-[240px] h-[240px]">
+      <Box className="hidden lg:block absolute z-0 top-[25%] left-[120px] w-[240px] h-[240px]">
         <Image
           width="240px"
           height="240px"

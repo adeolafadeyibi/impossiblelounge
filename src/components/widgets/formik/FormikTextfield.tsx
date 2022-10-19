@@ -47,7 +47,7 @@ const FormikTextfield: FC<PropTypes> = ({
         className={`h-14 ${
           Boolean(isTouched && error)
             ? "border border-red-500"
-            : "border border-[#2A2A2A] focus-within:border-secondary focus-within:outline-1 focus-within:outline-secondary"
+            : "border border-[#2A2A2A] focus-within:border-[#26F9D1] focus-within:outline-4 focus-within:outline-[#26F9D1]"
         } `}
         fullWidth
         name={name}

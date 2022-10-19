@@ -28,8 +28,8 @@ const HalloWeenDialog: FC<DialogProps> = ({
       aria-labelledby="customized-dialog-title"
       open={open}
     >
-      <Box className="w-[calc(100% - 100px)] max-w-[412px] md:w-[720px] md:max-w-none h-auto  rounded-3xl shadow-dialog bg-white flex flex-col">
-        <Box className="w-[720px] h-[240px] relative bg-modal-bg bg-cover bg-no-repeat bg-center flex items-center justify-center">
+      <Box className="w-[calc(100vw - 100px)] sm:w-[412px] md:w-[720px] md:max-w-none h-auto  rounded-3xl shadow-dialog bg-white flex flex-col">
+        <Box className="w-full h-[240px] relative bg-modal-bg bg-cover bg-no-repeat bg-center flex items-center justify-center">
           <Typography
             variant="inherit"
             className="text-[32px] text-secondary endor"
@@ -53,13 +53,19 @@ const HalloWeenDialog: FC<DialogProps> = ({
               <Box className="flex flex-col flex-1">
                 <Typography
                   variant="inherit"
-                  className="text-[18px] leading-[27px] text-white font-medium !mb-[6px]"
+                  className="text-[16px] leading-[25px] sm:text-[18px] sm:leading-[27px] text-white font-medium !mb-[6px]"
                 >
                   {val.title}
                 </Typography>
                 <Typography
                   variant="inherit"
-                  className="text-[14px] leading-[21px] text-grey_text !mb-0"
+                  className="block md:hidden text-[18px] leading-[27px] sm:text-[24px] sm:leading-[35px] text-secondary font-semibold !mb-0 !mr-12"
+                >
+                  {val.price}
+                </Typography>
+                <Typography
+                  variant="inherit"
+                  className="hidden md:block text-[14px] leading-[21px] text-grey_text !mb-0"
                 >
                   {val.description}
                 </Typography>
@@ -67,7 +73,7 @@ const HalloWeenDialog: FC<DialogProps> = ({
               <Box className="flex items-center">
                 <Typography
                   variant="inherit"
-                  className="text-[24px] leading-[35px] text-secondary font-semibold !mb-0 !mr-12"
+                  className="hidden md:block text-[24px] leading-[35px] text-secondary font-semibold !mb-0 !mr-12"
                 >
                   {val.price}
                 </Typography>

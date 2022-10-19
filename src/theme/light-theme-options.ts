@@ -65,7 +65,7 @@ const error = {
 
 const text = {
   primary: "#FFA000",
-  secondary: "#65748B",
+  secondary: "#26F9D1",
   dark: "#242424",
   disabled: "rgba(55, 65, 81, 0.48)",
 };
@@ -114,11 +114,17 @@ export const lightThemeOptions: ThemeOptions = {
           height: "100% !important",
         },
         input: {
-          color: text.primary,
+          color: text.secondary,
           padding: "13px 16px !important",
           "&::placeholder": {
             opacity: 0.5,
             color: text.primary,
+          },
+          "&:focus-within": {
+            "&::placeholder": {
+              opacity: 0.5,
+              color: text.secondary,
+            },
           },
         },
       },
