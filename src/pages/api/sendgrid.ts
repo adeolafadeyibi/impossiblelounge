@@ -8,8 +8,10 @@ async function sendEmail(req: any, res: any) {
     await sendgrid.send({
       to: req.body.email,
       from: process.env.EMAIL_FROM ?? "",
-      subject: `${req?.body?.name}'s Question`,
-      text: `Name: ${req?.body?.name} 
+      subject: `${req?.body?.name ?? "users"}'s Question`,
+      text: req.body.message
+        ? req?.body?.message
+        : `Name: ${req?.body?.name} 
              Phone: ${req?.body?.phone}
             ${req?.body?.question} 
              `,

@@ -15,6 +15,7 @@ const formSchema = Yup.object().shape({
     .required("Please enter your email!")
     .email("Please enter a valid email!")
     .default(""),
+  message: Yup.string().default(""),
 });
 
 const QueryForm: FC = () => {
@@ -26,10 +27,14 @@ const QueryForm: FC = () => {
     initialValues: formSchema.unknown().cast({}),
     validationSchema: formSchema,
     onSubmit: async (values, helpers): Promise<void> => {
+      const body = {
+        to: values.email,
+        message: values.message,
+      };
       if (isMounted()) {
         setLoading(true);
         axios
-          .post("/api/sendgrid", values)
+          .post("/api/sendgrid", body)
           .then((res) => {
             router.push("/success");
             formik.resetForm();
