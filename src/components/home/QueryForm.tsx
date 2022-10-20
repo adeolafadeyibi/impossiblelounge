@@ -30,7 +30,6 @@ const QueryForm: FC = () => {
       const body = {
         to: values.email,
         message: values.message,
-        formType: "bottom",
       };
       if (isMounted()) {
         setLoading(true);
