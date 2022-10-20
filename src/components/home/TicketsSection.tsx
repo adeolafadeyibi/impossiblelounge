@@ -1,6 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
 import Image from "next/image";
 import { FC } from "react";
+import Link from "next/link";
 import GradientButton from "../shared/GradientButton";
 
 const TicketSection: FC = () => {
@@ -63,7 +64,11 @@ const TicketSection: FC = () => {
                     </Typography>
                   ))}
                 </Box>
-                <GradientButton />
+                <Link href={val.ticket_link} passHref>
+                  <a target="_blank">
+                    <GradientButton />
+                  </a>
+                </Link>
               </Box>
             </Box>
           </Box>
@@ -79,13 +84,19 @@ const tickets = [
   {
     id: 1,
     main_image: "/static/standard_img.png",
+    ticket_link: "https://square.link/u/zVkmKMFv",
     title: "General Admission",
     price: 25,
-    bids: ["Get into the Hottest Party" ,"Try the IMpossible Cocktail", "Party till 4am"],
+    bids: [
+      "Get into the Hottest Party",
+      "Try the IMpossible Cocktail",
+      "Party till 4am",
+    ],
   },
   {
     id: 2,
     main_image: "/static/premium_img.png",
+    ticket_link: "https://square.link/u/Jt35wzSf",
     title: "VIP for 4",
     price: 400,
     bids: ["Entry for 4", "VIP Table", "1 Premium Bottle"],
@@ -94,12 +105,14 @@ const tickets = [
     id: 3,
     main_image: "/static/vip_img.png",
     title: "VIP Table Reservation",
+    ticket_link: "https://square.link/u/LSU53i8y",
     price: 125,
     bids: ["Entry for 1", "*VIP Table", "1 Bottle Minimum"],
   },
   {
     id: 4,
     main_image: "/static/exclusive_img.png",
+    ticket_link: "https://square.link/u/SmCzyMO0",
     title: "VIP Room",
     price: 1500,
     bids: ["Admission for 6", "4 Bottles", "Private Section in VIP Room"],

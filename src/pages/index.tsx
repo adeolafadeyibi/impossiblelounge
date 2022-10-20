@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { useEffect, useState } from "react";
+import HalloWeenDialog from "src/components/home/HalloweenDialog";
 import HeroSection from "src/components/home/HeroSection";
 import QueryForm from "src/components/home/QueryForm";
 import TicketSection from "src/components/home/TicketsSection";
@@ -13,6 +14,7 @@ import SuccessDialog from "src/components/widgets/SuccessDialog";
 const Home: NextPage = () => {
   const [open, setOpen] = useState(false);
   const [openSuccess, setOpenSuccess] = useState(false);
+  const [openParty, setOpenParty] = useState(false);
 
   useEffect(() => {
     let timer1 = setTimeout(() => setOpen(true), 2 * 1000);
@@ -43,6 +45,12 @@ const Home: NextPage = () => {
         <SuccessDialog
           open={openSuccess}
           handleClose={() => setOpenSuccess(false)}
+          openParty={() => setOpenParty(true)}
+        />
+        <HalloWeenDialog
+          open={openParty}
+          variant="party"
+          handleClose={() => setOpenParty(false)}
         />
       </Box>
     </>

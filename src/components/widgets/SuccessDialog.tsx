@@ -38,9 +38,10 @@ const StyledImage = styled("img")(({ theme }) => ({
 interface DialogProps {
   open: boolean;
   handleClose: () => void;
+  openParty: () => void;
 }
 
-const SuccessDialog: FC<DialogProps> = ({ open, handleClose }) => {
+const SuccessDialog: FC<DialogProps> = ({ open, handleClose, openParty }) => {
   return (
     <BootstrapDialog
       maxWidth="md"
@@ -96,8 +97,9 @@ const SuccessDialog: FC<DialogProps> = ({ open, handleClose }) => {
         </Typography>
         <Button
           variant="contained"
-          href="https://www.eventbrite.com/e/sexy-hip-hop-afrobeats-reggeton-halloween-party-tickets-430908277257"
-          target="_blank"
+          // href="https://www.eventbrite.com/e/sexy-hip-hop-afrobeats-reggeton-halloween-party-tickets-430908277257"
+          // target="_blank"
+          onClick={openParty}
           sx={{
             width: "100%",
             background: "#1f2022",

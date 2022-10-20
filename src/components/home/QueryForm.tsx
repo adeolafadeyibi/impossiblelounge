@@ -28,13 +28,13 @@ const QueryForm: FC = () => {
     validationSchema: formSchema,
     onSubmit: async (values, helpers): Promise<void> => {
       const body = {
-        to: values.email,
+        from: values.email,
         message: values.message,
       };
       if (isMounted()) {
         setLoading(true);
         axios
-          .post("/api/sendgrid", body)
+          .post("/api/contactUs", body)
           .then((res) => {
             router.push("/success");
             formik.resetForm();

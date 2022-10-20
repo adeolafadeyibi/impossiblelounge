@@ -4,6 +4,7 @@ import { FC } from "react";
 import { Box, Typography } from "@mui/material";
 import { X } from "src/icons/x";
 import GradientButton from "../shared/GradientButton";
+import Link from "next/link";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
@@ -77,7 +78,11 @@ const HalloWeenDialog: FC<DialogProps> = ({
                 >
                   {val.price}
                 </Typography>
-                <GradientButton title="Get Ticket" />
+                <Link href={val.ticket_link} passHref>
+                  <a target="_blank">
+                    <GradientButton title="Get Ticket" />
+                  </a>
+                </Link>
               </Box>
             </Box>
           ))}
@@ -93,24 +98,29 @@ const tickets = [
   {
     id: 1,
     title: "General Admission",
+    ticket_link: "https://square.link/u/zVkmKMFv",
     description: "Get in the hottest halloween party",
     price: "$25",
   },
   {
     id: 2,
     title: "VIP package for 4",
+    ticket_link: "https://square.link/u/Jt35wzSf",
     description: "Entry for 4 + VIP Table + 1 Premium Bottle",
     price: "$400",
   },
   {
     id: 3,
     title: "VIP",
-    description: "Table Reservation  + Entry for 1  + VIP Table (1 Bottle Minimum)",
+    ticket_link: "https://square.link/u/LSU53i8y",
+    description:
+      "Table Reservation  + Entry for 1  + VIP Table (1 Bottle Minimum)",
     price: "$125",
   },
   {
     id: 4,
     title: "VIP Room",
+    ticket_link: "https://square.link/u/SmCzyMO0",
     description: "Admission for 6 + 4 Bottles and Private Section in VIP",
     price: "$1500",
   },
