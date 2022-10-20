@@ -99,7 +99,10 @@ const SuccessDialog: FC<DialogProps> = ({ open, handleClose, openParty }) => {
           variant="contained"
           // href="https://www.eventbrite.com/e/sexy-hip-hop-afrobeats-reggeton-halloween-party-tickets-430908277257"
           // target="_blank"
-          onClick={openParty}
+          onClick={() => {
+            openParty();
+            handleClose();
+          }}
           sx={{
             width: "100%",
             background: "#1f2022",

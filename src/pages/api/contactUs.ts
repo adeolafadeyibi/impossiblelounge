@@ -8,8 +8,8 @@ if (process.env.SENDGRID_API_KEY)
 async function contactUs(req: any, res: any) {
   try {
     await sendgrid.send({
-      to: process.env.EMAIL_FROM ?? "",
-      from: req.body.from,
+      to: "impossiblelounge@gmail.com",
+      from: process.env.EMAIL_FROM ?? "",
       subject: `${req?.body.from}'s question`,
       text: req?.body?.message,
     });
