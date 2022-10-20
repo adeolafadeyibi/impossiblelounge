@@ -7,7 +7,7 @@ if (process.env.SENDGRID_API_KEY)
   
 
 async function sendEmail(req: any, res: any) {
-  const ticketLink = `<a href=https://impossiblehalloween.eventbrite.com/>Get My Tickets</a>`;
+  const ticketLink = `<a href=https://impossiblelounge.net/>Get My Tickets</a>`;
 
   try {
     await sendgrid.send({

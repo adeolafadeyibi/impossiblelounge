@@ -115,7 +115,7 @@ export default UpcomingEvents;
 const events = [
   {
     id: 1,
-    main_image: "/static/event_img.png",
+    main_image: "/static/wgwhiteparty.png",
     title: "Sexy Scary Halloween Party",
     time: "10:00 PM",
     location: "3660 Ruffin Road, San Diego CA",
@@ -124,7 +124,7 @@ const events = [
   },
   {
     id: 2,
-    main_image: "/static/event_img.png",
+    main_image: "/static/sydmimi.png",
     title: "The Return of Impossible Girls",
     time: "They party all night",
     location: "See you at the Party",

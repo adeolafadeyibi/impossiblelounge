@@ -54,7 +54,9 @@ const Success: NextPage = () => {
                   className="text-secondary"
                   component="span"
                 >
-                  @ImpossibleLounge
+                  <a href="https://www.instagram.com/impossiblelounge">
+              @impossiblelounge{" "}
+            </a>
                 </Typography>
               </Typography>
             </Box>
