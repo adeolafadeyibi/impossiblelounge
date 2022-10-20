@@ -104,10 +104,10 @@ const tickets = [
   {
     id: 3,
     main_image: "/static/vip_img.png",
-    title: "VIP Table Reservation",
+    title: "VIP Table RESV",
     ticket_link: "https://square.link/u/LSU53i8y",
     price: 125,
-    bids: ["Entry for 1", "*VIP Table", "1 Bottle Minimum"],
+    bids: ["Entry for 1", "VIP Table", "1 Bottle Minimum"],
   },
   {
     id: 4,
