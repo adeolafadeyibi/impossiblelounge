@@ -58,8 +58,7 @@ const HeroSection: FC = () => {
           variant="inherit"
           className="text-base sm:text-xl md:text-2xl leading-[25px] sm:leading-[30px] md:leading-[35px]  text-grey_text !mb-0 text-center"
         >
-          Conversely, a description of the the profit <br /> becomes even more
-          complex when compared
+         The Ultimate Halloween Party in San Diego
         </Typography>
       </Box>
       <Box className="max-w-[1032px] mx-auto flex flex-wrap items-center justify-center">

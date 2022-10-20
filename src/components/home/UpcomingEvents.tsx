@@ -20,9 +20,9 @@ const UpcomingEvents: FC = () => {
     <Box className="px-4 md:px-[50px] mb-[60px] md:mb-[96px] flex flex-col items-center">
       <Typography
         variant="inherit"
-        className="text-[32px] sm:text-[40px] md:text-[48px] text-secondary !mb-[60px] md:!mb-[90px] endor"
+        className="text-[48px] sm:text-[40px] md:text-[48px] text-secondary !mb-[60px] md:!mb-[90px] endor"
       >
-        Upcoming Events
+        You are in for a treat
       </Typography>
       <Box className="flex flex-wrap items-center justify-center">
         {events.map((val) => (
@@ -116,19 +116,19 @@ const events = [
   {
     id: 1,
     main_image: "/static/event_img.png",
-    title: "Halloween Party",
-    time: "10:30 AM",
-    location: "631 Hope Ct, Tallahassee, Florida, 83578",
+    title: "Sexy Scary Halloween Party",
+    time: "10:00 PM",
+    location: "3660 Ruffin Road, San Diego CA",
     description:
-      "It's a well-known fact that the assumption, that the potential role models is a base for developing aspects of the basics of planning",
+      "Come have an IMpossible experience!. 2 DJs spinning the best in R&B, Hiphop, Latin, Afrobeats & Reggaeton",
   },
   {
     id: 2,
     main_image: "/static/event_img.png",
-    title: "Impossible Girls",
-    time: "10:30 AM",
-    location: "631 Hope Ct, Tallahassee, Florida, 83578",
+    title: "The Return of Impossible Girls",
+    time: "They party all night",
+    location: "See you at the Party",
     description:
-      "It's a well-known fact that the assumption, that the potential role models is a base for developing aspects of the basics of planning",
+      "An IMpossible Girl is the life of the party!. It gets wild! You just have to experience it yourself!",
   },
 ];

@@ -92,26 +92,26 @@ export default HalloWeenDialog;
 const tickets = [
   {
     id: 1,
-    title: "Standard",
-    description: "The Exchange of Precise Application",
-    price: "$250",
+    title: "General Admission",
+    description: "Get in the hottest halloween party",
+    price: "$25",
   },
   {
     id: 2,
-    title: "Premium",
-    description: "The Exchange of Precise Application",
-    price: "$350",
+    title: "VIP package for 4",
+    description: "Entry for 4 + VIP Table + 1 Premium Bottle",
+    price: "$400",
   },
   {
     id: 3,
     title: "VIP",
-    description: "The Exchange of Precise Application",
-    price: "$500",
+    description: "Table Reservation  + Entry for 1  + VIP Table (1 Bottle Minimum)",
+    price: "$125",
   },
   {
     id: 4,
-    title: "Exclusive",
-    description: "The Exchange of Precise Application",
-    price: "$750",
+    title: "VIP Room",
+    description: "Admission for 6 + 4 Bottles and Private Section in VIP",
+    price: "$1500",
   },
 ];
