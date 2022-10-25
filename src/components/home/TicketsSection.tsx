@@ -13,6 +13,9 @@ const TicketSection: FC = () => {
       >
         Get Tickets
       </Typography>
+      <Typography sx={{fontSize:"36px",color:"#fff", marginBottom:"20px"}}>
+        Ladies In Free Until 11PM!
+      </Typography>
       <Box className="flex flex-wrap items-center justify-center">
         {tickets.map((val) => (
           <Box key={val.id} className="w-full sm:w-auto mb-4 sm:mb-0 sm:p-3">
