@@ -98,20 +98,21 @@ const tickets = [
   },
   {
     id: 2,
-    main_image: "/static/premium_img.png",
-    ticket_link: "https://square.link/u/Jt35wzSf",
-    title: "VIP for 4",
-    price: 400,
-    bids: ["Entry for 4", "VIP Table", "1 Premium Bottle"],
-  },
-  {
-    id: 3,
     main_image: "/static/vip_img.png",
     title: "VIP Table RESV",
     ticket_link: "https://square.link/u/LSU53i8y",
     price: 125,
     bids: ["Entry for 1", "VIP Table", "1 Bottle Minimum"],
   },
+  {
+    id: 3,
+    main_image: "/static/premium_img.png",
+    ticket_link: "https://square.link/u/Jt35wzSf",
+    title: "VIP for 4",
+    price: 400,
+    bids: ["Entry for 4", "VIP Table", "1 Premium Bottle"],
+  },
+
   {
     id: 4,
     main_image: "/static/exclusive_img.png",

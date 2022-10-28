@@ -104,19 +104,20 @@ const tickets = [
   },
   {
     id: 2,
-    title: "VIP package for 4",
-    ticket_link: "https://square.link/u/Jt35wzSf",
-    description: "Entry for 4 + VIP Table + 1 Premium Bottle",
-    price: "$400",
-  },
-  {
-    id: 3,
     title: "VIP",
     ticket_link: "https://square.link/u/LSU53i8y",
     description:
       "Table Reservation  + Entry for 1  + VIP Table (1 Bottle Minimum)",
     price: "$125",
   },
+  {
+    id: 3,
+    title: "VIP package for 4",
+    ticket_link: "https://square.link/u/Jt35wzSf",
+    description: "Entry for 4 + VIP Table + 1 Premium Bottle",
+    price: "$400",
+  },
+  
   {
     id: 4,
     title: "VIP Room",
